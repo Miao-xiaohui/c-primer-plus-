@@ -1,0 +1,17 @@
+int all_equalsto1()
+{int x;
+return !(x&~1);}//0xffff equals to ~1 = 1111111111111110
+
+int all_equalsto0()
+{int x;
+return !(x&0);}
+
+int low_equalsto1()
+{int x;
+return !((x&0xff)^0xff);
+}
+
+int high_all_zeros
+{int x;
+return !((x&0xff000000)^0xff000000);
+}
